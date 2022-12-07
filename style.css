@@ -4,6 +4,15 @@
     margin: 0;
     box-sizing: border-box;
 }
+.align-content{
+    --min: 0;
+    --max: 1440px;
+    display: grid;
+    grid-template-columns: minmax(var(--min),1fr) minmax(320px,var(--max)) minmax(var(--min),1fr);
+}
+.align-content > * {
+    grid-column: 2;
+}
 body{
     font-size: 1rem;
     /* font-family: 'Overpass', sans-serif; 
