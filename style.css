@@ -27,6 +27,9 @@ body{
     font-family: 'Ubuntu', sans-serif;
     text-align: center; 
 }
+
+/*---------=====header=====---------*/
+
 header{
     background: linear-gradient(135deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
     display: flex;
@@ -47,10 +50,54 @@ header::before{
     height: 100%;
     background: url(./images/bg-pattern-intro-mobile.svg) no-repeat;
     background-size: 300%;
-    background-position: -250px -200px;
+    background-position: -270px -200px;
     z-index: -1;
     pointer-events: none;
+    animation: rotate 15s linear infinite;
+    -webkit-animation: rotate 15s linear infinite;
 }
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(2.5deg);
+        -webkit-transform: rotate(5deg);
+        -moz-transform: rotate(5deg);
+        -ms-transform: rotate(5deg);
+        -o-transform: rotate(5deg);
+    }
+    50%{
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(-2.5deg);
+        -webkit-transform: rotate(-2.5deg);
+        -moz-transform: rotate(-2.5deg);
+        -ms-transform: rotate(-2.5deg);
+        -o-transform: rotate(-2.5deg);
+}
+    100%{
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+}
+
+/*=========
+----nav----
+=========*/
+
 header nav{
     width: 100%;
     position: absolute;
@@ -70,6 +117,9 @@ header nav{
 .nav__login{
     display: none;
 }
+
+/*hamburger-menu*/
+
 .nav__menu{
     width: 2rem;
     display: flex;
@@ -106,6 +156,9 @@ header nav{
     -ms-transform: translateY(.5rem);
     -o-transform: translateY(.5rem);
 }
+
+/*header-text*/
+
 .header__text{
     color: var(--text);
     padding: 0 2.5rem;
@@ -116,7 +169,7 @@ header nav{
     font-weight: 600;
     margin-bottom: 1rem;
 }
-.header__text-links{
+.header__text--links{
     display: grid;
     grid-template-columns: minmax(auto, 160px) minmax(auto, 160px);
     justify-content: center;
@@ -124,12 +177,12 @@ header nav{
     gap: 1rem;
     margin-top: 2.5rem;
 }
-.header__text-links a{
+.header__text--links a{
     color: var(--cta-text);
     background: var(--text);
     font-size: .95rem;
-    font-weight: 700;
     font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
     text-transform: capitalize;
     text-decoration: none;
     padding: .75rem 1rem;
@@ -140,7 +193,18 @@ header nav{
     -ms-border-radius: 1.5rem;
     -o-border-radius: 1.5rem;
 }
-.header__text-links #learn-more{
+.header__text--links #learn-more{
     color: var(--text);
     background: transparent;
+}
+main .intro{
+    padding: 6.5rem 1.5rem;
+}
+.intro h2{
+    color: var(--headings);
+    font-family: 'Overpass', sans-serif;
+    font-weight: 600;
+}
+.intro img{
+    width: 100%;
 }
