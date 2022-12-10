@@ -197,14 +197,56 @@ header nav{
     color: var(--text);
     background: transparent;
 }
+
+
+/*---------=====main=====---------*/
+
+main p{
+    color: var(--body-copy);
+    font-family: 'Overpass', sans-serif;
+    font-weight: 300;
+    line-height: 1.65;
+}
+
+/*===========
+----intro----
+===========*/
+
 main .intro{
-    padding: 6.5rem 1.5rem;
+    padding: 5.5rem 1.5rem;
 }
 .intro h2{
     color: var(--headings);
+    font-size: 1.75rem;
     font-family: 'Overpass', sans-serif;
     font-weight: 600;
+    margin-bottom: 2.75rem;
 }
-.intro img{
+.intro__flex{
+    display: flex;
+    flex-direction: column;
+    gap: 2.75rem;
+}
+.intro__flex--img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
+    overflow-x: hidden;
+}
+.intro__flex--img picture{
+    width: 150%;
+    margin: 0 auto;
+}
+.intro__flex--text{
+    display: grid;
+    gap: 3rem;
+    padding: 0 1rem;
+}
+.intro__flex--text-section h3{
+    color: var(--headings);
+    font-size: 1.6875rem;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 600;
+    margin-bottom: .75rem;
 }
