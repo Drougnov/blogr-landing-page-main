@@ -22,6 +22,10 @@
 .align-content > * {
     grid-column: 2;
 }
+h1,h2,h3{
+    font-family: 'Overpass', sans-serif;
+    font-weight: 600;
+}
 body{
     font-size: 1rem;
     font-family: 'Ubuntu', sans-serif;
@@ -165,8 +169,6 @@ header nav{
 }
 .header__text h1{
     font-size: 2rem;
-    font-family: 'Overpass', sans-serif;
-    font-weight: 600;
     margin-bottom: 1rem;
 }
 .header__text--links{
@@ -218,8 +220,6 @@ main .intro{
 .intro h2{
     color: var(--headings);
     font-size: 1.75rem;
-    font-family: 'Overpass', sans-serif;
-    font-weight: 600;
     margin-bottom: 2.75rem;
 }
 .intro__flex{
@@ -227,7 +227,8 @@ main .intro{
     flex-direction: column;
     gap: 2.75rem;
 }
-.intro__flex--img{
+.intro__flex--img,
+.feature__img{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -238,16 +239,16 @@ main .intro{
     width: 150%;
     margin: 0 auto;
 }
-.intro__flex--text{
+.intro__flex--text,
+.feature__text{
     display: grid;
     gap: 3rem;
     padding: 0 1rem;
 }
-.intro__flex--text-section h3{
+.intro__flex--text-section h3,
+.feature__text--section h2{
     color: var(--headings);
     font-size: 1.6875rem;
-    font-family: 'Overpass', sans-serif;
-    font-weight: 600;
     margin-bottom: .75rem;
 }
 
@@ -255,7 +256,7 @@ main .intro{
 ----state----
 ===========*/
 
-.state{
+main .state{
     background: url(./images/bg-pattern-circles.svg) no-repeat, linear-gradient(100deg, hsl(237, 23%, 32%), hsl(237, 17%, 21%));
     background-position: center -275px;
     background-size: 160% auto;
@@ -277,23 +278,35 @@ main .intro{
 }
 .state__img img{
     position: absolute;
-    left: -15%;
-    right: -15%;
+    left: -10%;
+    right: -10%;
     bottom: 0;
     margin-left: auto;
     margin-right: auto;
     margin-top: -150px;
-    width: 130%;
+    width: 120%;
     max-width: 380px;
     max-height: 380px;
 }
 .state__text h2{
     color: var(--text);
     font-size: 2rem;
-    font-family: 'Overpass', sans-serif;
-    font-weight: 600;
     margin-bottom: 1rem;
 }
 .state__text p{
     color: var(--text);
+}
+
+/*==============
+----feature----
+==============*/
+
+main .feature{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 3rem 1.5rem 5rem 1.5rem;
+}
+.feature__img picture{
+    margin: 0 auto;
 }
