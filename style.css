@@ -310,3 +310,43 @@ main .feature{
 .feature__img picture{
     margin: 0 auto;
 }
+
+/*---------=====footer=====---------*/
+
+footer{
+    color: var(--footer-text);
+    background: var(--footer-bg);
+    border-top-right-radius: 6rem;
+    padding: 5rem 1.5rem 1rem 1.5rem;
+}
+.footer__grid{
+    display: grid;
+    gap: 2.5rem;
+}
+.footer__grid--logo{
+    margin-bottom: 1.5rem;
+}
+.footer__grid--section h4{
+    margin-bottom: 1.5rem;
+}
+.footer__list{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+}
+.footer__list li a{
+    color: var(--footer-text);
+    text-decoration: none;
+}
+.attribution{
+    font-size: .8rem;
+    margin-top: 1rem;
+}
+.attribution a{
+    color: var(--cta-text);
+}
+.attribution a:hover{
+    color: var(--cta-hover-bg);
+    text-decoration: none;
+}
