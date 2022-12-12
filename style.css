@@ -145,6 +145,11 @@ header nav{
     -moz-border-radius: 2.5px;
     -ms-border-radius: 2.5px;
     -o-border-radius: 2.5px;
+    transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+    -o-transition: all .2s linear;
 }
 .hamburger::before{
     transform: translateY(-.5rem);
@@ -159,6 +164,28 @@ header nav{
     -moz-transform: translateY(.5rem);
     -ms-transform: translateY(.5rem);
     -o-transform: translateY(.5rem);
+}
+nav.active .hamburger{
+    background: transparent;
+    transform: translateX(-1rem);
+    -webkit-transform: translateX(-1rem);
+    -moz-transform: translateX(-1rem);
+    -ms-transform: translateX(-1rem);
+    -o-transform: translateX(-1rem);
+}
+nav.active .hamburger::before{
+    transform: translateX(1rem) rotate(45deg);
+    -webkit-transform: translateX(1rem) rotate(45deg);
+    -moz-transform: translateX(1rem) rotate(45deg);
+    -ms-transform: translateX(1rem) rotate(45deg);
+    -o-transform: translateX(1rem) rotate(45deg);
+}
+nav.active .hamburger::after{
+    transform: translateX(1rem) rotate(-45deg);
+    -webkit-transform: translateX(1rem) rotate(-45deg);
+    -moz-transform: translateX(1rem) rotate(-45deg);
+    -ms-transform: translateX(1rem) rotate(-45deg);
+    -o-transform: translateX(1rem) rotate(-45deg);
 }
 
 /*header-text*/
@@ -341,7 +368,7 @@ footer{
 }
 .attribution{
     font-size: .8rem;
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 .attribution a{
     color: var(--cta-text);
