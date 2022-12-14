@@ -6,47 +6,51 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <script src="app.js" defer></script>
   <title>Blogr | Frontend Mentor</title>
 </head>
 <body class="align-content">
   <header>
     <nav>
       <a href="#"><img src="./images/logo.svg" alt="Home | Blogr" class="nav__logo"></a>
-      <ul class="nav__list">
-        <li>
-          <span>Product</span>
-          <i class="fas fa-chevron-up"></i>
-          <ul class="dropdown-list">
-            <li>Overview</li>
-            <li>Pricing</li>
-            <li>Marketplace</li>
-            <li>Features</li>
-            <li>Integrations</li>
-          </ul>
-        </li>
-        <li>
-          <span>Company</span>
-          <i class="fas fa-chevron-up"></i>
-          <ul class="dropdown-list">
-            <li>About</li>
-            <li>Team</li>
-            <li>Blog</li>
-            <li>Careers</li>
-          </ul>
-        </li>
-        <li>
-          <span>Connect</span>
-          <i class="fas fa-chevron-up"></i>
-          <ul class="dropdown-list">
-            <li>Contact</li>
-            <li>Newsletter</li>
-            <li>LinkedIn</li>
-          </ul>
-        </li>
-      </ul>
-      <div class="nav__login">
-        <a href="#">Login</a>
-        <a href="#">Sign Up</a>
+      <div class="nav-links">
+        <ul class="nav__list">
+          <li class="open">
+            <span>Product</span>
+            <i class="fas fa-chevron-down arrow-down"></i>
+            <ul class="nav__list--dropdown">
+              <li><a href="#">Overview</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Marketplace</a></li>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Integrations</a></li>
+            </ul>
+          </li>
+          <li>
+            <span>Company</span>
+            <i class="fas fa-chevron-down arrow-down"></i>
+            <ul class="nav__list--dropdown">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Team</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Careers</a></li>
+            </ul>
+          </li>
+          <li>
+            <span>Connect</span>
+            <i class="fas fa-chevron-down arrow-down"></i>
+            <ul class="nav__list--dropdown">
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Newsletter</a></li>
+              <li><a href="#">LinkedIn</a></li>
+            </ul>
+          </li>
+        </ul>
+        <hr>
+        <div class="nav__login">
+          <a href="#">Login</a>
+          <a href="#">Sign Up</a>
+        </div>
       </div>
       <div class="nav__menu">
         <div class="hamburger"></div>
@@ -144,6 +148,5 @@
     </div>
     <p class="attribution">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener">Frontend Mentor</a>. Coded by <a href="https://twitter.com/itz_rocky_barua">Rocky</a>.</p>
   </footer>
-  <script src="app.js"></script>
 </body>
 </html>
