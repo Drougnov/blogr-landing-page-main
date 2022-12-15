@@ -5,6 +5,8 @@ toggleHamMenu.addEventListener('click', ()=>{
 })
 
 const dropdownLists = document.querySelectorAll(".nav__list li");
+const openedDropdown = document.getElementById('open');
+openedDropdown.classList.add('open');
 
 dropdownLists.forEach((list) => {
     list.addEventListener("click", () => {
