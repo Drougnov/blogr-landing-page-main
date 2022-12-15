@@ -86,7 +86,6 @@ header{
 =========*/
 
 header nav{
-    width: 100%;
     position: absolute;
     top: 3.5rem;
     left: 0;
@@ -523,5 +522,46 @@ footer{
     }
     .attribution{
         margin-top: 4rem;
+    }
+}
+
+@media(min-width: 1000px){
+    header{
+        background: url(./images/bg-pattern-intro-desktop.svg) no-repeat, linear-gradient(135deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+        background-position: 34% 33%;
+        flex-direction: column;
+    }
+    header nav{
+        position: unset;
+        align-items: center;
+    }
+    .nav-links{
+        position: unset;
+        background: transparent;
+        max-width: unset;
+        display: flex;
+        justify-content: space-between;
+        box-shadow: none;
+        margin: 0;
+        padding: 0;
+        transform: unset;
+        -webkit-transform: unset;
+        -moz-transform: unset;
+        -ms-transform: unset;
+        -o-transform: unset;
+    }
+    .nav-links .nav__list{
+        flex-direction: row;
+        align-items: center;
+    }
+    .nav-links hr{
+        display: none;
+    }
+    .nav__login{
+        flex-direction: row;
+        align-items: center;
+    }
+    .nav__menu{
+        display: none;
     }
 }
