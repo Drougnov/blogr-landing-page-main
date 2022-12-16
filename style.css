@@ -207,8 +207,8 @@ nav.active .nav-links{
     width: max-content;
     color: var(--text) !important;
     background: linear-gradient(135deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 700;
+    font-family: 'Ubuntu', sans-serif !important;
+    font-weight: 700 !important;
     padding: .75rem 2.5rem;
     margin: 0 auto;
     border-radius: 1.5rem;
@@ -521,13 +521,18 @@ footer{
 @media(min-width: 1000px){
     header{
         background: url(./images/bg-pattern-intro-desktop.svg) no-repeat, linear-gradient(135deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
-        background-position: 34% 33%;
+        background-position: 25% 50%;
     }
     header nav{
         align-items: center;
+        gap: 3rem;
+    }
+    .nav__logo{
+        max-width: 100px;
     }
     .nav-links{
         position: unset;
+        color: var(--text);
         background: transparent;
         max-width: unset;
         display: flex;
@@ -541,18 +546,40 @@ footer{
         -ms-transform: unset;
         -o-transform: unset;
     }
-    .nav-links .nav__list{
-        flex-direction: row;
-        align-items: center;
-    }
-    .nav-links hr{
-        display: none;
-    }
+    .nav-links .nav__list,
     .nav__login{
         flex-direction: row;
         align-items: center;
+        gap: 1.5rem;
     }
+    .nav__list li span{
+        font-size: 1rem;
+    }
+    .nav__list li .arrow-down,
+    .nav__login a{
+        color: var(--text);
+    }
+    .nav__list--dropdown{
+        position: absolute;
+        min-width: 150px;
+        text-align: left;
+        box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.15);
+    }
+    .open .nav__list--dropdown{
+        padding: 1.5rem;
+    }
+    .nav-links hr,
     .nav__menu{
         display: none;
+    }
+    .nav__login--sign-up{
+        color: var(--cta-text) !important;
+        background: var(--text);
+    }
+    .header__text{
+        padding: 4rem 2.5rem 8rem 2.5rem;
+    }
+    .header__text h1{
+        font-size: 3rem;
     }
 }
