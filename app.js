@@ -9,7 +9,7 @@ const openedDropdown = document.getElementById('open');
 
 
 dropdownLists.forEach((list) => {
-    list.addEventListener("click", () => {
+    list.addEventListener("mouseover", () => {
         if (list.classList.contains("open")) {
             list.classList.remove("open");
         } else {
