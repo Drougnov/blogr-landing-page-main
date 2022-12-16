@@ -576,10 +576,40 @@ footer{
         color: var(--cta-text) !important;
         background: var(--text);
     }
+
+
     .header__text{
         padding: 4rem 2.5rem 8rem 2.5rem;
     }
     .header__text h1{
         font-size: 3rem;
+    }
+
+    main .intro{
+        margin-top: 8rem;
+        padding: 0;
+    }
+    .intro h2{
+        font-size: 2.25rem;
+        margin-bottom: -150px;
+    }
+    .intro__flex{
+        flex-direction: row-reverse;
+        align-items: center;
+        margin: 6rem 0;
+    }
+    .intro__flex > *{
+        width: 100%;
+    }
+    .intro__flex--img{
+        overflow-x: hidden;
+    }
+    .intro__flex--img picture img{
+        width: 150%;
+        height: 150%;
+    }
+    .intro__flex--text{
+        text-align: left;
+        padding-left: 3rem;
     }
 }
