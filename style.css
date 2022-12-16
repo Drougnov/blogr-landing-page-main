@@ -188,6 +188,9 @@ nav.active .nav-links{
     font-weight: 500;
     text-decoration: none;
 }
+.nav__list--dropdown li a:hover{
+    font-weight: 700;
+}
 .nav-links hr{
     display: block;
     height: 1px;
@@ -321,10 +324,24 @@ nav.active .hamburger::after{
     -moz-border-radius: 1.5rem;
     -ms-border-radius: 1.5rem;
     -o-border-radius: 1.5rem;
+    transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+    -o-transition: all .2s linear;
+}
+.header__text--links a:hover{
+    color: var(--text);
+    background: var(--cta-hover-bg);
+    border: 2px solid transparent;
 }
 .header__text--links #learn-more{
     color: var(--text);
     background: transparent;
+}
+.header__text--links #learn-more:hover{
+    color: var(--cta-hover-bg);
+    background: var(--text);
 }
 
 
@@ -559,9 +576,14 @@ footer{
     .nav__list li span{
         font-size: 1rem;
     }
+    .nav-links,
     .nav__list li .arrow-down,
     .nav__login a{
-        color: var(--text);
+        color: hsl(0, 0%, 90%);
+    }
+    .nav__list li:hover span,
+    .nav__login a:hover{
+        text-decoration: underline;
     }
     .nav__list--dropdown{
         position: absolute;
@@ -581,6 +603,16 @@ footer{
     .nav__login--sign-up{
         color: var(--cta-text) !important;
         background: var(--text);
+        transition: all .2s linear;
+        -webkit-transition: all .2s linear;
+        -moz-transition: all .2s linear;
+        -ms-transition: all .2s linear;
+        -o-transition: all .2s linear;
+}
+    .nav__login--sign-up:hover{
+        color: var(--text) !important;
+        background: var(--cta-hover-bg) !important;
+        text-decoration: none !important;
     }
 
 
@@ -671,7 +703,11 @@ footer{
     }
 
     .footer__grid--section{
+        font-size: 1rem;
         text-align: left;
+    }
+    .footer__list li a:hover{
+        text-decoration: underline;
     }
 }
 
@@ -715,5 +751,8 @@ footer{
     }
     .feature__text{
         padding-right: 9rem;
+    }
+    .footer__grid{
+        grid-template-columns: 1.5fr repeat(3, 1fr);
     }
 }
