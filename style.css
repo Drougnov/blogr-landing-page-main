@@ -27,6 +27,7 @@ h1,h2,h3{
     font-weight: 600;
 }
 body{
+    background: hsl(0, 0%, 98%);
     font-size: 1rem;
     font-family: 'Ubuntu', sans-serif;
     text-align: center; 
@@ -131,6 +132,9 @@ nav.active .nav-links{
     display: flex;
     flex-direction: column;
     gap: 1rem;
+}
+.nav__list li{
+    cursor: pointer;
 }
 .nav__list li span{
     font-size: 18px;
@@ -561,11 +565,13 @@ footer{
     }
     .nav__list--dropdown{
         position: absolute;
-        min-width: 150px;
+        min-width: 160px;
+        background: var(--text);
         text-align: left;
-        box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.15);
+        box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.2);
     }
     .nav__list--dropdown li a{
+        font-size: 1rem;
         padding: .5rem 1.5rem;
     }
     .nav-links hr,
@@ -660,10 +666,54 @@ footer{
         margin-left: -38%;
     }
     .feature__text{
+        padding: 0;
         padding-right: 3rem;
     }
 
     .footer__grid--section{
         text-align: left;
+    }
+}
+
+@media(min-width: 1250px){
+    body{
+        font-size: 18px;
+    }
+    header nav{
+        padding: 3.5rem 9rem;
+        gap: 5rem;
+    }
+    .nav-links .nav__list,
+    .nav__login{
+        gap: 2rem;
+    }
+    .header__text h1{
+        font-size: 3.5rem;
+    }
+    .header__text--links a{
+        font-size: 1.125rem;
+    }
+    .intro__flex{
+        margin: 8rem 0;
+        gap: 3rem;
+    }
+    .intro__flex--text{
+        padding-left: 9rem;
+    }
+    main .state{
+        padding: 6.5rem 9rem;
+    }
+    .state__img img{
+        margin-bottom: -485px;
+    }
+    .state__text h2{
+        font-size: 2.5rem;
+    }
+    main .feature{
+        gap: 6rem;
+        margin: 10rem 0;
+    }
+    .feature__text{
+        padding-right: 9rem;
     }
 }
