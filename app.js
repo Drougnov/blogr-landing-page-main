@@ -5,11 +5,9 @@ toggleHamMenu.addEventListener('click', ()=>{
 })
 
 const dropdownLists = document.querySelectorAll(".nav__list li");
-const openedDropdown = document.getElementById('open');
-
 
 dropdownLists.forEach((list) => {
-    list.addEventListener("mouseover", () => {
+    list.addEventListener("click", () => {
         if (list.classList.contains("open")) {
             list.classList.remove("open");
         } else {
