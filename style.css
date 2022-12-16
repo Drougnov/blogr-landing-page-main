@@ -37,10 +37,6 @@ body{
 header{
     background: url(./images/bg-pattern-intro-mobile.svg) no-repeat, linear-gradient(135deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
     background-position: 34% 33%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 12rem 0 8rem 0;
     border-bottom-left-radius: 6rem;
 }
 @keyframes rotate {
@@ -86,20 +82,17 @@ header{
 =========*/
 
 header nav{
-    position: absolute;
-    top: 3.5rem;
-    left: 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 0 1.5rem;
+    padding: 3.5rem 1.5rem;
 }
 .nav__logo{
     max-width: 80px;
 }
 .nav-links{
     position: absolute;
-    top: 4rem;
+    top: 7.5rem;
     left: 0;
     right: 0;
     margin-left: auto;
@@ -295,7 +288,7 @@ nav.active .hamburger::after{
 
 .header__text{
     color: var(--text);
-    padding: 0 2.5rem;
+    padding: 2.5rem 2.5rem 8rem 2.5rem;
 }
 .header__text h1{
     font-size: 2rem;
@@ -485,7 +478,7 @@ footer{
 
 @media(min-width: 760px){
     header nav{
-        padding: 0 3rem;
+        padding: 3.5rem 3rem;
     }
     .nav-links{
         max-width: 450px;
@@ -529,10 +522,8 @@ footer{
     header{
         background: url(./images/bg-pattern-intro-desktop.svg) no-repeat, linear-gradient(135deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
         background-position: 34% 33%;
-        flex-direction: column;
     }
     header nav{
-        position: unset;
         align-items: center;
     }
     .nav-links{
