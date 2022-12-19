@@ -25,12 +25,12 @@ Users should be able to:
 
 ### Screenshot
 
-!Blogr landing page's screenshot[](./design/desktop-design.jpg)
+![Blogr landing page's screenshot](./design/desktop-design.jpg)
 
 ### Links
 
-- Solution URL: [yet to add](https://your-solution-url.com)
-- Live Site URL: [yet to add](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/blogr-landing-page-cBI-FOdjXE](https://www.frontendmentor.io/solutions/blogr-landing-page-cBI-FOdjXE)
+- Live Site URL: [https://drougnov.github.io/blogr-landing-page-main](https://drougnov.github.io/blogr-landing-page-main)
 
 ## My process
 
